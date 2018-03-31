@@ -41,7 +41,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #74B2BF;
+	color: #73a1b0;
 }
 ul, ol {
 	list-style: none;
@@ -73,7 +73,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #74B2BF;
+	background: #73a1b0;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border: 0;
@@ -124,13 +124,13 @@ hr {
 }
 .navbar-custom .nav li a:hover {
 	outline: 0;
-	color: #74B2BF;
+	color: #73a1b0;
 	background-color: transparent;
 }
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
 	outline: 0;
 	background-color: transparent;
-	color: #74B2BF;
+	color: #73a1b0;
 }
 .navbar-custom .nav li.active {
 	outline: 0;
@@ -164,8 +164,8 @@ hr {
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
 	color: #fff;
-	background-color: #74B2BF;
-	border-color: #74B2BF;
+	background-color: #73a1b0;
+	border-color: #73a1b0;
 }
 .btn-primary i.fa {
 	margin-right: 10px;
@@ -179,7 +179,7 @@ hr {
 	text-align: center;
 	color: #fff;
 	background: url(../img/intro-bg.jpg) no-repeat center top;
-	background-color: #74B2BF;
+	background-color: #73a1b0;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -212,7 +212,7 @@ hr {
 /* Skills Section */
 #skills {
 	padding: 100px 0;
-	background: #74B2BF;
+	background: #73a1b0;
 }
 #skills h2 {
 	color: #fff;
@@ -283,7 +283,7 @@ ol.type li {
 	margin-left: 20px;
 }
 ol.type li a {
-	background: #74B2BF;
+	background: #73a1b0;
 	color: #fff;
 	padding: 6px 14px;
 }
@@ -395,7 +395,7 @@ ol.type li a:hover {
 /* Education Section */
 #education {
 	padding: 100px 0;
-	background: #74B2BF;
+	background: #73a1b0;
 }
 #education h2 {
 	color: #fff;
@@ -526,7 +526,7 @@ ol.type li a:hover {
 #contact {
 	padding: 100px 0 40px 0;
 	color: #121d1f;
-	background: #74B2BF;
+	background: #73a1b0;
 }
 #contact h2 {
 	color: #fff;
@@ -643,7 +643,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #a0a5a5;
 }
 #footer a:hover {
-	color: #74B2BF;
+	color: #73a1b0;
 }
 
 /* Media Queries */
