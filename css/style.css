@@ -422,27 +422,41 @@ ol.type li a:hover {
 }
 /* Education Section */
 #education {
-	padding: 100px 0;
+	padding-top: 100px;
 	background: #73a1b0;
 }
 #education h2 {
-	color: #fff;
-}
-#education hr {
-	background: rgba(255,255,255,0.3);
-}
-.title {
-	color: #fff !important;
-	text-transform: uppercase !important;
-	margin: 0px !important;
-}
-#education h4 {
+	font-size: 3.0625em;
+	font-style: italic;
+	font-weight: 300;
 	color: rgba(255,255,255,0.8);
-	text-align: left;
+	text-align: center;
 	text-transform: none;
 	margin: 0px;
-	line-height: 12px;
+	line-height: 1.1;
 }
+#education h2:before {
+	content: '“';
+}
+#education h2:after {
+	content: '”';
+}
+#education h2:before,
+#education h2:after {
+	font-family: 'Source Sans Pro';
+	font-size: 1.2040em;
+	font-weight: 600;
+}
+#education footer {
+	display: block;
+    color: rgba(255,255,255,0.4);
+    text-align: right;
+	padding: 50px 80px 30px 0px;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
 /* Experience Section */
 #experience {
 	padding: 100px 0;
