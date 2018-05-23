@@ -85,60 +85,88 @@ hr {
 #nav.affix {
 	position: fixed; 
 	top: 0;
-	width: 100%
+	width: 100%;
 }
 .navbar-custom {
 	margin-bottom: 0;
-	background-color: #121d1f;
+	background-color: rgba(18,29,31,0);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	border-radius: 0px;
+	padding: 20px 0;
+}
+.navbar-scroll {
+	margin-bottom: 0;
+	background-color: rgba(18,29,31,1);
 	border-radius: 0px;
 	padding: 8px 0;
+	transition: background-color 0.4s ease, border-color 0.4s ease, margin 0.25s ease-out;
 }
 
 .navbar-brand {
-	padding: 8px 15px !important;
+	padding: 0px 15px;
 }
-
-.navbar-custom .navbar-brand {
-	font-weight: 600;
+.navbar-brand-scroll {
+	display: inline-block;
+	padding: 8px 6px;
 }
-.navbar-custom .navbar-brand:focus {
+.navbar-brand-img {
+	width: 45px;
+	height: 45px;
+}
+.navbar-brand-img-scroll {
+	width: 30px;
+	height: 30px;
+}
+.navbar-custom .navbar-brand:focus,
+.navbar-scroll .navbar-brand:focus {
 	outline: 0;
 }
-.navbar-custom .navbar-brand .navbar-toggle {
-	padding: 4px 6px;
-	font-size: 16px;
-	color: #fff;
-}
-.navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-scroll .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active,
+.navbar-scroll .navbar-brand .navbar-toggle:focus, {
 	outline: 0;
 }
-.navbar-custom a {
+.navbar-custom a,
+.navbar-scroll a {
 	color: #f4f5f6;
 }
-.navbar-custom .nav li a {
+.navbar-custom .nav li a,
+.navbar-scroll .nav li a {
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
 	outline: 0;
+	background-color: transparent;
+}
+.navbar-scroll .nav li a:hover {
+	outline: 0;
 	color: #73a1b0;
 	background-color: transparent;
 }
-.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+.navbar-custom .nav li a:focus,
+.navbar-scroll .nav li a:focus,
+.navbar-custom .nav li a:active,
+.navbar-scroll .nav li a:active {
 	outline: 0;
 	background-color: transparent;
 	color: #73a1b0;
 }
-.navbar-custom .nav li.active {
+.navbar-custom .nav li.active,
+.navbar-scroll .nav li.active {
 	outline: 0;
 }
-.navbar-custom .nav li.active a {
+.navbar-custom .nav li.active a,
+.navbar-scroll .nav li.active a {
 	background-color: rgba(255,255,255,.3);
 }
-.navbar-custom .nav li.active a:hover {
+.navbar-custom .nav li.active a:hover,
+.navbar-scroll .nav li.active a:hover {
 	color: #fff;
 }
 .btn-default {

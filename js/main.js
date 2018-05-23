@@ -17,12 +17,19 @@ function main() {
         }
       });
 
-	// affix the navbar after scrofll below header
-$('#nav').affix({
-      offset: {
-        top: $('header').height()
-      }
-});	
+	// change navbar background after scroll
+    $(document).scroll(function() {
+        if ($(window).scrollTop() > 10) {
+            $('.navbar').removeClass('navbar-custom').addClass('navbar-scroll');
+            $('.navbar-brand').addClass('navbar-brand-scroll').removeClass('navbar-brand');
+            $('.navbar-brand-img').addClass('navbar-brand-img-scroll').removeClass('navbar-brand-img');
+        } else {
+            $('.navbar').removeClass('navbar-scroll').addClass('navbar-custom');
+            $('.navbar-brand-scroll').addClass('navbar-brand').removeClass('navbar-brand-scroll');
+            $('.navbar-brand-img-scroll').addClass('navbar-brand-img').removeClass('navbar-brand-img-scroll');
+        }
+        
+    });
 
   	// Portfolio isotope filter
     $(window).load(function() {
