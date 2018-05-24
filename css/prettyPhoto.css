@@ -1,10 +1,7 @@
 div.pp_default .pp_top,div.pp_default .pp_top .pp_middle,div.pp_default .pp_top .pp_left,div.pp_default .pp_top .pp_right,div.pp_default .pp_bottom,div.pp_default .pp_bottom .pp_left,div.pp_default .pp_bottom .pp_middle,div.pp_default .pp_bottom .pp_right{height:13px}
-div.pp_default .pp_top .pp_left{background:url(../img/prettyPhoto/default/sprite.png) -78px -93px no-repeat}
-div.pp_default .pp_top .pp_middle{background:url(../img/prettyPhoto/default/sprite_x.png) top left repeat-x}
-div.pp_default .pp_top .pp_right{background:url(../img/prettyPhoto/default/sprite.png) -112px -93px no-repeat}
 div.pp_default .pp_content .ppt{color:#f8f8f8}
-div.pp_default .pp_content_container .pp_left{background:url(../img/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y;padding-left:13px}
-div.pp_default .pp_content_container .pp_right{background:url(../img/prettyPhoto/default/sprite_y.png) top right repeat-y;padding-right:13px}
+div.pp_default .pp_content_container .pp_left{padding-left:13px}
+div.pp_default .pp_content_container .pp_right{padding-right:13px}
 div.pp_default .pp_next:hover{background:url(../img/prettyPhoto/default/sprite_next.png) center right no-repeat;cursor:pointer}
 div.pp_default .pp_previous:hover{background:url(../img/prettyPhoto/default/sprite_prev.png) center left no-repeat;cursor:pointer}
 div.pp_default .pp_expand{background:url(../img/prettyPhoto/default/sprite.png) 0 -29px no-repeat;cursor:pointer;width:28px;height:28px}
@@ -20,13 +17,11 @@ div.pp_default .pp_nav .pp_pause{background-position:-51px -29px}
 div.pp_default a.pp_arrow_previous,div.pp_default a.pp_arrow_next{background:url(../img/prettyPhoto/default/sprite.png) -31px -3px no-repeat;height:20px;width:20px;margin:4px 0 0}
 div.pp_default a.pp_arrow_next{left:52px;background-position:-82px -3px}
 div.pp_default .pp_content_container .pp_details{margin-top:5px}
+.pp_details{transform:translateX(-10px)translateY(178px)}
 div.pp_default .pp_nav{clear:none;height:30px;width:110px;position:relative}
 div.pp_default .pp_nav .currentTextHolder{font-family:Georgia;font-style:italic;color:#999;font-size:11px;left:75px;line-height:25px;position:absolute;top:2px;margin:0;padding:0 0 0 10px}
 div.pp_default .pp_close:hover,div.pp_default .pp_nav .pp_play:hover,div.pp_default .pp_nav .pp_pause:hover,div.pp_default .pp_arrow_next:hover,div.pp_default .pp_arrow_previous:hover{opacity:0.7}
 div.pp_default .pp_description{font-size:13px;font-weight:500;line-height:14px;margin:5px 50px 5px 0}
-div.pp_default .pp_bottom .pp_left{background:url(../img/prettyPhoto/default/sprite.png) -78px -127px no-repeat}
-div.pp_default .pp_bottom .pp_middle{background:url(../img/prettyPhoto/default/sprite_x.png) bottom left repeat-x}
-div.pp_default .pp_bottom .pp_right{background:url(../img/prettyPhoto/default/sprite.png) -112px -127px no-repeat}
 div.pp_default .pp_loaderIcon{background:url(../img/prettyPhoto/default/loader.gif) center center no-repeat}
 div.light_rounded .pp_top .pp_left{background:url(../img/prettyPhoto/light_rounded/sprite.png) -88px -53px no-repeat}
 div.light_rounded .pp_top .pp_right{background:url(../img/prettyPhoto/light_rounded/sprite.png) -110px -53px no-repeat}
@@ -114,14 +109,14 @@ div.facebook .pp_bottom .pp_left{background:url(../img/prettyPhoto/facebook/spri
 div.facebook .pp_bottom .pp_middle{background:url(../img/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x}
 div.facebook .pp_bottom .pp_right{background:url(../img/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat}
 div.pp_pic_holder a:focus{outline:none}
-div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}
-div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}
+div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500;opacity:0.5!important}
+div.pp_pic_holder{display:none;position:absolute;width:725px!important;z-index:10000;transform:translateY(-73px)}
 .pp_content{height:40px;min-width:40px}
 * html .pp_content{width:40px}
 .pp_content_container{position:relative;text-align:left;width:100%}
 .pp_content_container .pp_left{padding-left:20px}
 .pp_content_container .pp_right{padding-right:20px}
-.pp_content_container .pp_details{float:left;margin:10px 0 2px}
+.pp_content_container .pp_details{float:left;margin:10px 0 2px;width:690px!important}
 .pp_description{display:none;margin:0}
 .pp_social{float:left;margin:0}
 .pp_social .facebook{float:left;margin-left:5px;width:55px;overflow:hidden}
@@ -144,11 +139,12 @@ a.pp_previous{background:url(../img/prettyPhoto/light_rounded/btnNext.png) 10000
 a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
 a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-indent:-10000px}
 .pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}
-#pp_full_res{line-height:1!important}
+#pp_full_res{line-height:1!important;width:690px!important;border-bottom:3px solid #121d1f}
+#fullResImage{width:690px!important;height:460px!important}
 #pp_full_res .pp_inline{text-align:left}
 #pp_full_res .pp_inline p{margin:0 0 15px}
 div.ppt{color:#fff;display:none;font-size:17px;z-index:9999;margin:0 0 5px 15px}
-div.pp_default .pp_content,div.light_rounded .pp_content{background-color:#fff}
+div.pp_default .pp_content,div.light_rounded .pp_content{background-color:#fff;width:690px!important;height:685px!important}
 div.pp_default #pp_full_res .pp_inline,div.light_rounded .pp_content .ppt,div.light_rounded #pp_full_res .pp_inline,div.light_square .pp_content .ppt,div.light_square #pp_full_res .pp_inline,div.facebook .pp_content .ppt,div.facebook #pp_full_res .pp_inline{color:#000}
 div.pp_default .pp_gallery ul li a:hover,div.pp_default .pp_gallery ul li.selected a,.pp_gallery ul a:hover,.pp_gallery li.selected a{border-color:#fff}
 div.pp_default .pp_details,div.light_rounded .pp_details,div.dark_rounded .pp_details,div.dark_square .pp_details,div.light_square .pp_details,div.facebook .pp_details{position:relative}
