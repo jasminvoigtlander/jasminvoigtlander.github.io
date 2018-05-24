@@ -245,23 +245,24 @@ hr {
 #skills h2 {
 	color: #fff;
 }
-#skills h3 {
-	color: #fff;
-	padding-top: 20px;
-	padding-bottom: 0px;
-}
 #skills hr {
 	background: rgba(255,255,255,0.3);
 }
-#skills .skill {
-	margin-bottom: 40px;
+#skills h4 {
 	text-align: center;
-	padding: 0px;
-}
-#skills .skill h4 {
-	font-weight: 600;
 	color: #fff;
+	font-size: 1.25em;
 }
+#skills p {
+	text-align: center;
+	color: rgba(255,255,255,0.8);
+}
+#skills .skill-container {
+	float: left;
+	width: 210px;
+	margin: 37px;
+}
+
 .chart {
 	position: relative;
 	display: inline-block;
@@ -421,11 +422,11 @@ ol.type li a:hover {
 	color: #E87E04;
 }
 /* Education Section */
-#education {
+#quote {
 	padding-top: 100px;
 	background: #73a1b0;
 }
-#education h2 {
+#quote h2 {
 	font-size: 3.0625em;
 	font-style: italic;
 	font-weight: 300;
@@ -435,19 +436,19 @@ ol.type li a:hover {
 	margin: 0px;
 	line-height: 1.1;
 }
-#education h2:before {
+#quote h2:before {
 	content: '“';
 }
-#education h2:after {
+#quote h2:after {
 	content: '”';
 }
-#education h2:before,
-#education h2:after {
+#quote h2:before,
+#quote h2:after {
 	font-family: 'Source Sans Pro';
 	font-size: 1.2040em;
 	font-weight: 600;
 }
-#education footer {
+#quote footer {
 	display: block;
     color: rgba(255,255,255,0.4);
     text-align: right;
