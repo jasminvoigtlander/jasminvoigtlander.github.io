@@ -331,7 +331,6 @@ ol.type li a:hover {
 	z-index: 1
 }
 .isotope, .isotope .isotope-item {
-	/* change duration value to whatever you like */
 	-webkit-transition-duration: 0.8s;
 	-moz-transition-duration: 0.8s;
 	transition-duration: 0.8s;
@@ -373,9 +372,7 @@ ol.type li a:hover {
 	position: absolute;
 	text-align: center;
 	margin: 0 auto;
-	/* color: #ffffff; */
 	color: #73a1b0;
-	/* background: rgba(0, 0, 0, 0.55); */
 	background: rgba(246, 246, 246, 0.95);
 	padding: 33% 0 0 0;
 	height: 100%;
@@ -385,7 +382,6 @@ ol.type li a:hover {
 }
 .hover-bg .hover-text>h4 {
 	opacity: 0;
-	/* color: #fff; */
 	color: #121d1f;
 	font-weight: 400;
 	-webkit-transform: translateY(100%);
