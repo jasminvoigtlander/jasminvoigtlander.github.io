@@ -139,7 +139,7 @@ a.pp_previous{background:url(../img/prettyPhoto/light_rounded/btnNext.png) 10000
 a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
 a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-indent:-10000px}
 .pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}
-#pp_full_res{line-height:1!important;width:690px!important;border-bottom:3px solid #121d1f}
+#pp_full_res{line-height:1!important;width:690px!important;border-bottom:2px solid #121d1f}
 #fullResImage{width:690px!important;height:460px!important}
 #pp_full_res .pp_inline{text-align:left}
 #pp_full_res .pp_inline p{margin:0 0 15px}

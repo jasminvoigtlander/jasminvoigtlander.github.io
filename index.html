@@ -8,6 +8,11 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <!-- Stylesheets-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
@@ -78,9 +83,7 @@
         <div class="col-md-8 col-md-offset-2">
           <div class="about-text">
             <p>I am a fourth year at Georgia Institute of Technology, seeking a Computational Media degree with the concentrations
-              of People and Interaction Design. The crossover between design and programming has always been of interest to me, and
-              since moving to Atlanta 4 years ago, I have been lucky enough to work alongside many talented individuals on a number
-              of high impacting projects. I have a deep interest in human nature and behavior and enjoy turning complex problems
+              of People and Interaction Design. The crossover between design and programming has always been of interest to me, and I enjoy turning complex problems
               into simple and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me watching a documentary,
               exploring the outdoors, or at a concert.</p>
             <a class="btn btn-primary" href="Voigtlander, Jasmin Resume.pdf" target="_blank">
@@ -180,63 +183,101 @@
             <div class="col-sm-6 col-md-3 col-lg-3 app">
               <div class="portfolio-item">
                 <div class="hover-bg">
-                  <a href="img/portfolio/02-large.jpg" rel="prettyPhoto">
+                  <a href="#buzzfilm" rel="modal:open">
                     <div class="hover-text">
                       <h4>BuzzFilm Android Application</h4>
                       <small>App Development</small>
                     </div>
                     <img src="img/portfolio/02-small.jpg" class="img-responsive">
                   </a>
+                  <!-- Modal -->
+                  <div id="buzzfilm" class="modal">
+                    <div class='modal-image buzzfilm'></div>
+                    <div class='modal-details'>
+                      <div class='title'>BuzzFilm</div>
+                      <div class='tag'>Film Reviews</div>
+                      <div class='summary'>
+                        BuzzFilm is a mobile application that allows users to rate, sort, and view television 
+                        shows and films. Targeted towards Georgia Tech students and built using Java and the 
+                        OMDb API.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 web">
               <div class="portfolio-item">
                 <div class="hover-bg">
-                  <a href="img/portfolio/08-large.jpg" rel="prettyPhoto">
+                  <a href="#cfm" rel="modal:open">
                     <div class="hover-text">
                       <h4>CFM Data Visualization </br>Web Application</h4>
                       <small>Web Development</small>
                     </div>
                     <img src="img/portfolio/08-small.jpg" class="img-responsive">
                   </a>
+                  <!-- Modal -->
+                  <div id="cfm" class="modal">
+                    <div class='modal-image cfm'></div>
+                    <div class='modal-details'></div>
+                    <div class='title'>CFM Tool</div>
+                    <div class='tag'>Data Visualization</div>
+                    <div class='summary'>
+                      Data visualization tool created for the use of Community Farmers Markets (CFM) to help 
+                      harness their data and see underlying patterns. Developed using Javascript and Chart.js.
+                    </div>
+                    <a class="btn btn-primary portfolio-btn" href="https://lmc-3710.github.io/index.html#dashboard" target="_blank"> Open Site</a>
+                  </div>
                 </div>
               </div>
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 game">
             <div class="portfolio-item">
               <div class="hover-bg">
-                <a href="img/portfolio/09-large.jpg" rel="prettyPhoto">
+                <a href="#domi" rel="modal:open">
                   <div class="hover-text">
                     <h4>DoMi Music Education Game</h4>
                     <small>Game Design</small>
                   </div>
                   <img src="img/portfolio/09-small.jpg" class="img-responsive">
                 </a>
+                <!-- Modal -->
+                <div id="domi" class="modal">
+                  <div class='modal-image domi'></div>
+                  <div class='modal-details'></div>
+                  <div class='title'>DoMi</div>
+                  <div class='tag'>Music Education</div>
+                  <div class='summary'>
+                    DoMi is a gamified lesson and assessment tool built to teach children aged 3-5 beginning 
+                    music and phonemic concepts. Developed using HTML5 and Phaser 2D game framework.
+                  </div>
+                  <a class="btn btn-primary portfolio-btn" href="https://cs-4660.github.io/Main%20Menu/" target="_blank"> Open Game</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 branding">
             <div class="portfolio-item">
               <div class="hover-bg">
-                <a href="img/portfolio/03-large.jpg" rel="prettyPhoto">
+                <a href="#williams" rel="modal:open">
                   <div class="hover-text">
-                    <h4>New American Pathways Poster Set</h4>
+                    <h4>Williams Academy and Learning Center</h4>
                     <small>Branding</small>
                   </div>
-                  <img src="img/portfolio/03-small.jpg" class="img-responsive"> </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="img/portfolio/06-large.jpg" rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>William's Academy and Learning Center</h4>
-                    <small>Branding</small>
+                  <img src="img/portfolio/06-small.jpg" class="img-responsive">
+                </a>
+                <!-- Modal -->
+                <div id="williams" class="modal">
+                  <div class='modal-image williams'></div>
+                  <div class='modal-details'></div>
+                  <div class='title'>Williams Logo</div>
+                  <div class='tag'>Branding</div>
+                  <div class='summary'>
+                    Worked with the owner of Williams Academy and Learning Center to create 
+                    a cohesive logo and style guide for the company. Vector images created 
+                    using Illustrator.
                   </div>
-                  <img src="img/portfolio/06-small.jpg" class="img-responsive"> </a>
+                </div>
               </div>
             </div>
           </div>
@@ -302,8 +343,8 @@
                   <p style="padding-left: 10px;">maintenance bucket</p>
                   <p>• Build out and implement roadmap strategies and</p>
                   <p style="padding-left: 10px;">solution development</p>
-                  <p>• Utilize knowledge in technologies below plus jQuery</p>
-                  <p style="padding-left: 10px;">and ReactJS</p>
+                  <p>• Utilize knowledge in technologies below plus</p>
+                  <p style="padding-left: 10px;">jQuery and ReactJS</p>
                 </div>
               </div>
             </li>
