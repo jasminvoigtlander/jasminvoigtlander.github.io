@@ -358,7 +358,7 @@ ol.type li a:hover {
 }
 
 .portfolio-item .hover-bg {
-	height: 260px;
+	height: 175px;
 	overflow: hidden;
 	position: relative;
 }
@@ -368,7 +368,7 @@ ol.type li a:hover {
 	margin: 0 auto;
 	color: #73a1b0;
 	background: rgba(246, 246, 246, 0.95);
-	padding: 33% 0 0 0;
+	padding: 20% 0 0 0;
 	height: 100%;
 	width: 100%;
 	opacity: 0;
@@ -782,7 +782,7 @@ header .intro-text {
 	background-image: url(../img/portfolio/08-large.jpg);
 }
 .domi {
-	background-image: url(../img/portfolio/09-large.jpg);
+	background-image: url(../img/portfolio/09-large.png);
 }
 .williams {
 	background-image: url(../img/portfolio/06-large.jpg);
@@ -815,13 +815,6 @@ header .intro-text {
 	padding: 6px 12px !important;
 	margin-top: 11px;
 }
-
-/* <div class="newWindow"></div> */
-/* .newWindow {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==) no-repeat;
-	width: 1em;
-	height: 1em;
-} */
 
 a[target='_blank'].portfolio-btn::before{
 	content: '\29C9';
