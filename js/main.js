@@ -28,7 +28,6 @@ function main() {
             $('.navbar-brand-scroll').addClass('navbar-brand').removeClass('navbar-brand-scroll');
             $('.navbar-brand-img-scroll').addClass('navbar-brand-img').removeClass('navbar-brand-img-scroll');
         }
-        console.log($(window).scrollTop());
     });
 
     $('body').scrollspy({

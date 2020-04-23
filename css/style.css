@@ -76,6 +76,7 @@ hr {
 	margin-bottom: 30px;
 	border: 0;
 }
+
 /* Navigation */
 #nav {
 	z-index: 1;
@@ -197,6 +198,7 @@ hr {
 .btn-primary i.fa {
 	margin-right: 10px;
 }
+
 /* Home Section */
 .intro {
 	display: table;
@@ -214,6 +216,7 @@ hr {
 .section-title.center {
 	padding: 25px 0 0 0;
 }
+
 /* About Section */
 #about {
 	padding: 100px 0;
@@ -235,6 +238,7 @@ hr {
 	margin-bottom: 30px;
 	text-align: center;
 }
+
 /* Skills Section */
 #skills {
 	padding: 100px 0;
@@ -260,7 +264,6 @@ hr {
 	width: 210px;
 	margin: 37px;
 }
-
 .chart {
 	position: relative;
 	display: inline-block;
@@ -286,6 +289,7 @@ hr {
 	margin-left: 0.1em;
 	font-size: .8em;
 }
+
 /* Portfolio Section */
 #portfolio {
 	padding: 80px 0;
@@ -315,7 +319,6 @@ ol.type li a:hover {
 	background: #121d1f;
 	color: #fff;
 }
-
 .isotope, .isotope .isotope-item {
 	-webkit-transition-duration: 0.8s;
 	-moz-transition-duration: 0.8s;
@@ -348,7 +351,6 @@ ol.type li a:hover {
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
-
 .portfolio-item .hover-bg {
 	height: 175px;
 	overflow: hidden;
@@ -507,11 +509,15 @@ ol.type li a:hover {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
 	margin-bottom: 0;
 }
+
 /* Contact Section */
 #contact {
-	padding: 100px 0 40px 0;
+	padding-bottom: 40px;
 	color: #121d1f;
 	background: rgba(18,29,31,0.95);
+}
+#contact .container {
+	margin-top: 70px;
 }
 #contact h2 {
 	color: #fff;
@@ -535,6 +541,10 @@ ol.type li a:hover {
 #contact .text-danger {
 	color: #000000;
 	text-align: left;
+}
+#contact-border-top {
+	fill: #fff;
+	
 }
 label {
 	font-size: 12px;
@@ -562,10 +572,10 @@ form textarea {
 #form-message {
 	height: 170px;
 	padding-bottom: 140px;
+	margin-bottom: 10px !important;
 }
-
 #contact .social {
-	margin-top: 60px;
+	margin-top: 120px;
 }
 #contact .social ul li {
 	display: inline-block;
@@ -590,14 +600,13 @@ form textarea {
 	height: 55px;
 	width: 55px;
 }
-
 #contact .btn {
 	background-color: transparent;
 	border: 1px solid #fff;
 	border-radius: 0;
 	padding: 10px 30px;
 	color: #fff;
-	transform: translate(27.5vh, -2vh);
+	float: right;
 }
 #contact .btn:hover, #contact .btn:focus {
 	background-color: #e31b6d;
@@ -612,9 +621,6 @@ form textarea {
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
 	outline: none;
 	outline-offset: none;
-}
-#contact-border-top {
-	transform: translateY(-14.6vh);
 }
 #contact-border-top path {
 	fill: white;
@@ -757,16 +763,19 @@ header .intro-text {
 	transform: translateX(-30px) translateY(-15px)
 }
 .buzzfilm {
-	background-image: url(../img/portfolio/02-large.jpg);
+	background-image: url(../img/portfolio/02.jpg);
 }
 .cfm {
-	background-image: url(../img/portfolio/08-large.jpg);
+	background-image: url(../img/portfolio/08.jpg);
 }
 .domi {
-	background-image: url(../img/portfolio/09-large.png);
+	background-image: url(../img/portfolio/09.png);
 }
-.williams {
-	background-image: url(../img/portfolio/06-large.jpg);
+.brainyphonics {
+	background-image: url(../img/portfolio/06.jpg);
+}
+.airattack {
+	background-image: url(../img/portfolio/01.png);
 }
 .modal-details {
 	padding-top: 13px;
@@ -796,7 +805,6 @@ header .intro-text {
 	padding: 6px 12px !important;
 	margin-top: 11px;
 }
-
 a[target='_blank'].portfolio-btn::before{
 	content: '\29C9';
 }
