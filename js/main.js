@@ -17,7 +17,7 @@ function main() {
         }
       });
 
-	// change navbar background after scroll
+	// Change navbar background after scroll
     $(document).scroll(function() {
         if ($(window).scrollTop() > 10) {
             $('.navbar').removeClass('navbar-custom').addClass('navbar-scroll');
@@ -30,12 +30,13 @@ function main() {
         }
     });
 
+    // Highlight navbar items depending on section
     $('body').scrollspy({
         target: '.navbar-right',
         offset: 50
-      });
+    });
 
-  	// Portfolio isotope filter
+  	// Portfolio filter
     $(window).load(function() {
         var $container = $('.portfolio-items');
         $container.isotope({
@@ -62,23 +63,6 @@ function main() {
         });
 
     });
-	
-	  	
-    // CounterUp
-	$(document).ready(function( $ ) {
-		if($("span.count").length > 0){	
-			$('span.count').counterUp({
-					delay: 10, // the delay time in ms
-			time: 1500 // the speed time in ms
-			});
-		}
-	});
-	
-  	// Pretty Photo
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});	
-
 
     // Send Message
     var myform = $("form#myform");
@@ -99,7 +83,5 @@ function main() {
         return false;
     });
 }());
-
-
 }
 main();
