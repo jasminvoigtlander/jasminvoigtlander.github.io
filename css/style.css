@@ -352,7 +352,6 @@ ol.type li a:hover {
 	transition: all 0.5s ease-out;
 }
 .portfolio-item .hover-bg {
-	height: 175px;
 	overflow: hidden;
 	position: relative;
 }
@@ -405,7 +404,7 @@ ol.type li a:hover {
 
 /* Experience Section */
 #experience {
-	padding: 100px 0;
+	padding: 100px 0 30px 0;
 	background: linear-gradient(to bottom, #fff 0%, #f4f5f6 49%, #fff 100%);
 }
 #experience h4 {
