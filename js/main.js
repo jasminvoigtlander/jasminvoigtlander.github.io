@@ -28,8 +28,13 @@ function main() {
             $('.navbar-brand-scroll').addClass('navbar-brand').removeClass('navbar-brand-scroll');
             $('.navbar-brand-img-scroll').addClass('navbar-brand-img').removeClass('navbar-brand-img-scroll');
         }
-        
+        console.log($(window).scrollTop());
     });
+
+    $('body').scrollspy({
+        target: '.navbar-right',
+        offset: 50
+      });
 
   	// Portfolio isotope filter
     $(window).load(function() {
@@ -75,27 +80,27 @@ function main() {
 		social_tools: false
 	});	
 
+
+    // Send Message
+    var myform = $("form#myform");
+    myform.submit(function (event) {
+        event.preventDefault();
+
+        var service_id = "default_service";
+        var template_id = "portfolio_template";
+
+        emailjs.sendForm(service_id, template_id, myform[0])
+            .then(function () {
+                alert("Message sent!");
+                myform.find("button").text("Send");
+            }, function (err) {
+                alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+                myform.find("button").text("Send");
+            });
+        return false;
+    });
 }());
 
 
 }
 main();
-
-// Send Message
-var myform = $("form#myform");
-myform.submit(function (event) {
-    event.preventDefault();
-
-    var service_id = "default_service";
-    var template_id = "portfolio_template";
-
-    emailjs.sendForm(service_id, template_id, myform[0])
-        .then(function () {
-            alert("Message sent!");
-            myform.find("button").text("Send");
-        }, function (err) {
-            alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-            myform.find("button").text("Send");
-        });
-    return false;
-});

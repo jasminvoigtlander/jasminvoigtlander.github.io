@@ -161,7 +161,8 @@ hr {
 }
 .navbar-custom .nav li.active a,
 .navbar-scroll .nav li.active a {
-	background-color: rgba(255,255,255,.3);
+	color: #e31b6d;
+	transition: all 0.1s ease-out;
 }
 .navbar-custom .nav li.active a:hover,
 .navbar-scroll .nav li.active a:hover {
