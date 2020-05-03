@@ -566,8 +566,11 @@ form textarea {
 	box-sizing: border-box;
 	background: #162223;
 	border: 0;
-	color: #888f91;
+	color: #fff;
 }
+::placeholder {
+	color: rgba(255, 255, 255, 0.7);
+  }
 #form-message {
 	height: 170px;
 	padding-bottom: 140px;
